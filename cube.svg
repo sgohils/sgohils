@@ -1,0 +1,15 @@
+<svg xmlns="http://w3.org" viewBox="0 0 320 240" width="320" height="240">
+<style>
+@keyframes loop { 
+  0%, 100% { content: ' .'; } 
+  25% { content: '   +---+ \A   |   | \A   +---+'; } 
+  50% { content: '    +-------+ \A   /       /| \A  /       / | \A +-------+  | \A |       |  | \A |       |  + \A |       | /  \A |       |/   \A +-------+'; } 
+  75% { content: '      +----------+ \A     /          /| \A    /          / | \A   /          /  | \A  +----------+   | \A  |          |   | \A  |          |   | \A  |          |   + \A  |          |  /  \A  |          | /   \A  |          |/    \A  +----------+'; } 
+} 
+text { font-family: monospace; font-size: 14px; fill: #ffffff; white-space: pre; } 
+.cube::after { content: ' '; animation: loop 4s steps(1) infinite; } 
+@media (prefers-color-scheme: light) { text { fill: #000000; } }
+</style>
+<rect width="100%" height="100%" fill="transparent"/>
+<text x="40" y="40" class="cube"></text>
+</svg>
